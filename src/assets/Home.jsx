@@ -191,22 +191,22 @@ const Home = () => {
                     <p className="text-muted text-justify">At every step, we are together – especially when they need us the most.</p>
                     <div className="list-group what_we_do" >
                         <div className="list-group-item border-0 d-flex align-items-center">
-                            <FaHandHoldingHeart className="text-dark me-2" /> <strong>Women Career Comeback: Reskilling for IT Excellence</strong>
+                            <FaHandHoldingHeart className="text-dark me-2" size={30} /> <strong>Women Career Comeback: Reskilling for IT Excellence</strong>
                         </div>
                         <div className="list-group-item border-0 d-flex align-items-center">
-                            <FaHandHoldingHeart className="text-dark me-2" /> <strong>Tech-Driven Skilling</strong>
+                            <FaHandHoldingHeart className="text-dark me-2" size={30} /> <strong>Tech-Driven Skilling</strong>
                         </div>
                         <div className="list-group-item border-0 d-flex align-items-center">
-                            <FaHandHoldingHeart className="text-dark me-2" /> <strong>Employability Solutions</strong>
+                            <FaHandHoldingHeart className="text-dark me-2" size={30} /> <strong>Employability Solutions</strong>
                         </div>
                         <div className="list-group-item border-0 d-flex align-items-center">
-                            <FaHandHoldingHeart className="text-dark me-2" /> <strong>Digital Empowerment</strong>
+                            <FaHandHoldingHeart className="text-dark me-2" size={30} /> <strong>Digital Empowerment</strong>
                         </div>
                         <div className="list-group-item border-0 d-flex align-items-center">
-                            <FaHandHoldingHeart className="text-dark me-2" /> <strong>Fostering Innovation</strong>
+                            <FaHandHoldingHeart className="text-dark me-2" size={30} /> <strong>Fostering Innovation</strong>
                         </div>
                         <div className="list-group-item border-0 d-flex align-items-center">
-                            <FaHandHoldingHeart className="text-dark me-2" /> <strong>Career Kickstart: Internship Opportunities for Tech Students</strong>
+                            <FaHandHoldingHeart className="text-dark me-2" size={30} /> <strong>Career Kickstart: Internship Opportunities for Tech Students</strong>
                         </div>
                     </div>
                 </div>

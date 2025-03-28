@@ -31,6 +31,11 @@ body {
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -72,6 +77,24 @@ button:focus-visible {
 .text-justify{
   text-align: justify;
   hyphens: auto;
+}
+
+/* mobile navbar */
+
+.top-bar {
+  transition: transform 0.3s ease-in-out;
+}
+.top-bar.hidden {
+  transform: translateY(-100%);
+}
+.top-bar.visible {
+  transform: translateY(0);
+}
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 
@@ -477,4 +500,20 @@ ul {
   .counter_mobile{
     font-size: 13px;
   }
+}
+
+/*  */
+.what_we_do .list-group-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.what_we_do .list-group-item .me-2 {
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.what_we_do .list-group-item strong {
+  flex-grow: 1; /* Allow the text to take available space */
+  white-space: normal; /* Allow text to wrap */
 }

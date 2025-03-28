@@ -8,6 +8,31 @@ const Header = () => {
   // State to track the active section
   const [activeLink, setActiveLink] = useState("home");
 
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setShowHeader(false); // Hide header when scrolling down
+      } else if (currentScrollY === 0) {
+        setShowHeader(true); // Show full header when at the top
+      } else {
+        setShowHeader(false);
+      }
+      setIsScrolled(currentScrollY > 50);
+      lastScrollY = currentScrollY;
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
+
+
   // Function to handle active link change
   const handleLinkClick = (link) => {
     setActiveLink(link);
@@ -47,6 +72,8 @@ const Header = () => {
     <>
       {/* Top Bar */}
       <div className="fixed-top">
+        {/* header section */}
+        <div className={`top-bar ${showHeader ? 'visible' : 'hidden'}`}>
         <div className="bg-info text-white py-3">
           <div className="container">
             <div className="row align-items-center">
@@ -82,14 +109,15 @@ const Header = () => {
             </div>
           </div>
         </div>
+        </div>
 
         {/* Navbar */}
-        <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm ${isScrolled ? 'fixed-top' : ''}`}>
           <div className="container">
             <Link className="navbar-brand" to="/" onClick={() => handleLinkClick("home")}>
               <img src={Logo} alt="Skillverse Foundation" height="60" />
             </Link>
-            <button
+            {/* <button
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -99,7 +127,7 @@ const Header = () => {
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
-            </button>
+            </button> */}
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto align-items-center">
                 <li className="nav-item">
