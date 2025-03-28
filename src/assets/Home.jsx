@@ -43,7 +43,7 @@ const Home = () => {
     const experts = [
         {
           name: "Sudhir Gorade",
-          role: "CGO",
+          role: "Director",
           linkedin: "https://www.linkedin.com/in/sudhir-gorade-18b83526/",
           experience: "15+ years",
           qualification: "BE IT | MTech Computer",
@@ -52,11 +52,11 @@ const Home = () => {
           img: team1,
         },
         {
-          name: "Sonali Gorade",
-          role: "CEO",
+          name: "Sonali Adhav-Gorade",
+          role: "Director",
           linkedin: "https://www.linkedin.com/in/sonali-adhav-gorade-648a9a209/",
           experience: "10+ years",
-          qualification: "BE IT | ME Compute",
+          qualification: "BE IT | ME Computer",
           description:
             "A visionary leader empowering women through tech-driven education, bridging the skills gap for inclusive growth.",
           img: team2,
