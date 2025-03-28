@@ -52,14 +52,14 @@ const Header = () => {
             <div className="row align-items-center">
               {/* Left Side - Contact Info */}
               <div className="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
-                <a href="tel:+919800000000" className="me-3 text-white d-inline-flex align-items-center" style={{ textDecoration: "none" }}>
+                <a href="tel:+919890058156" className="me-3 text-white d-inline-flex align-items-center" style={{ textDecoration: "none" }}>
                   <FaPhone className="me-1 rotate-icon" style={{ color: "#fff", width: '20px', height: '20px' }} />
-                  +91 9800000000
+                  +91 9890058156
                 </a>
 
-                <a href="mailto:info@skillverse.com" className="text-white d-inline-flex align-items-center" style={{ textDecoration: "none" }}>
+                <a href="mailto:contact@skillversefoundation.org" className="text-white d-inline-flex align-items-center" style={{ textDecoration: "none" }}>
                   <FaEnvelope className="me-1" style={{ color: "#fff", width: '20px', height: '20px' }} />
-                  info@skillverse.com
+                  contact@skillversefoundation.org
                 </a>
               </div>
 

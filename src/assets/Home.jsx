@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import Header from './Header'
-import banner2 from '../uploads/Home_desk.png'
+import banner2 from '../uploads/Home_desk.webp'
 import banner1 from '../uploads/home1.png'
-import about from '../uploads/about.jpg'
+import about from '../uploads/about.webp'
 import Logo from '../uploads/footer_logo.png';
+import { FaFacebookF, FaInstagram, FaEnvelope, FaWhatsapp, FaPhone, FaLinkedin, FaBriefcase } from 'react-icons/fa';
 
 import banner1Mobile from '../uploads/mobile-home1.png' 
-import banner2Mobile from '../uploads/mobile-home2.png'  
+import banner2Mobile from '../uploads/mobile-home2.webp'  
 
 import { FaHandHoldingHeart } from 'react-icons/fa';
 import Carousel from 'react-bootstrap/Carousel';
-import elderCareImage1 from '../uploads/mobile-home2.png';
-import elderCareImage2 from '../uploads/mobile-home1.png';
-import elderCareImage3 from '../uploads/mobile-home2.png';
+import elderCareImage1 from '../uploads/mobile-home2.webp';
+import elderCareImage2 from '../uploads/whta_we_do.webp';
+// import elderCareImage3 from '../uploads/mobile-home2.webp';
 
 import one from '../uploads/1.png'  
 import two from '../uploads/2.png'  
@@ -31,10 +32,37 @@ import files from "../uploads/internships.png";
 import target from '../uploads/target.png' 
 import vision from '../uploads/vision.png' 
 
+import team1 from '../uploads/team1.webp';
+import team2 from '../uploads/team2.webp';
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
+
+    const experts = [
+        {
+          name: "Sudhir Gorade",
+          role: "CGO",
+          linkedin: "https://www.linkedin.com/in/sudhir-gorade-18b83526/",
+          experience: "15+ years",
+          qualification: "BE IT | MTech Computer",
+          description:
+            "A strategic innovator advancing skill development and employability in emerging technologies through industry collaboration.",
+          img: team1,
+        },
+        {
+          name: "Sonali Gorade",
+          role: "CEO",
+          linkedin: "https://www.linkedin.com/in/sonali-adhav-gorade-648a9a209/",
+          experience: "10+ years",
+          qualification: "BE IT | ME Compute",
+          description:
+            "A visionary leader empowering women through tech-driven education, bridging the skills gap for inclusive growth.",
+          img: team2,
+        },
+      ];
+    
 
     useEffect(() => {
         AOS.init({
@@ -44,10 +72,10 @@ const Home = () => {
       }, []);
 
     const stats = [
-        { icon: <img src={calendar} alt="Calendar Icon" style={{maxWidth:'60px'}} />, text: "Women Reskilled", count: 2014, suffix: "+", bold: true },
-        { icon: <img src={location} alt="location" style={{maxWidth:'60px'}} />, text: "Students Trained in Emerging Technologies", count: 190, suffix: "+", bold: true },
-        { icon: <img src={users} alt="users" style={{maxWidth:'60px'}} />, text: "Startups Incubated", count: 2.5, suffix: "+", bold: true, decimal: true },
-        { icon: <img src={files} alt="files" style={{maxWidth:'60px'}} />, text: "Students Interned", count: 200, suffix: "+", bold: true },
+        { icon: <img src={calendar} alt="Calendar Icon" style={{maxWidth:'60px'}} />, text: "Upskilling Individuals", count: 2014, suffix: "+", bold: true },
+        { icon: <img src={location} alt="location" style={{maxWidth:'60px'}} />, text: "Transforming Careers", count: 190, suffix: "+", bold: true },
+        { icon: <img src={users} alt="users" style={{maxWidth:'60px'}} />, text: "Incubating Startup", count: 2.5, suffix: "+", bold: true, decimal: true },
+        { icon: <img src={files} alt="files" style={{maxWidth:'60px'}} />, text: "Empowering Student", count: 200, suffix: "+", bold: true },
       ];
 
     const [isMobile, setIsMobile] = useState(false);
@@ -72,29 +100,29 @@ const Home = () => {
 
         <div id="carouselExampleIndicators" className="carousel slide top-carousel" data-bs-ride="carousel">
             <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                {/* <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button> */}
+                {/* <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> */}
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                <img src={isMobile ? banner1Mobile : banner1} className="d-block w-100" alt="..."/>
+                <img src={isMobile ? banner2Mobile : banner2} className="d-block w-100" alt="..."/>
                 </div>
-                <div className="carousel-item">
+                {/* <div className="carousel-item">
                 <img src={isMobile ? banner2Mobile : banner2} className="d-block w-100" alt="..."/>
                 </div>
                 <div className="carousel-item">
                 <img src={isMobile ? banner1Mobile : banner1} className="d-block w-100" alt="..."/>
-                </div>
+                </div> */}
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
-            </button>
+            </button> */}
         </div>
 
         {/* <div className="container mt-5 text-center">
@@ -130,10 +158,10 @@ const Home = () => {
         </div> */}
         
             {/* About Us */}
-        <div className="container about-section py-2 mt-5" id="about">
+        <div className="container about-section py-2 mt-1" id="about">
             <div className="row align-items-center">
                 <div className="col-lg-6 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
-                    <img src={about} alt="Community Support" className="img-fluid rounded shadow"/>
+                    <img src={about} alt="Community Support" className="img-fluid rounded"/>
                 </div>
                 <div className="col-lg-6 mt-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                     <div className="d-flex align-items-center mb-2">
@@ -152,7 +180,7 @@ const Home = () => {
         </div>
 
             {/* What we do */}
-        <div className="container py-4" id="courses">
+        <div className="container py-4 mt-4" id="courses">
             <div className="row align-items-center">
                 <div className="col-lg-6 text-start" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                     <div className="d-flex align-items-center mb-2">
@@ -190,15 +218,15 @@ const Home = () => {
                         <Carousel.Item>
                             <img src={elderCareImage2} alt="Elderly Woman" className="img-fluid rounded w-100" style={{ objectFit: 'cover' }} />
                         </Carousel.Item>
-                        <Carousel.Item>
+                        {/* <Carousel.Item>
                             <img src={elderCareImage3} alt="Elderly Woman" className="img-fluid rounded w-100" style={{ objectFit: 'cover' }} />
-                        </Carousel.Item>
+                        </Carousel.Item> */}
                     </Carousel>
                 </div>
             </div>
         </div>
 
-        <div className="container text-center py-3" id="titlesWithIcon">
+        <div className="container text-center py-3 mt-2 mb-1" id="titlesWithIcon">
             <h2 className="section-heading" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">We aim to create a better world for everyone</h2>
             <div className="row g-4 justify-content-center">
                 <div className="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
@@ -365,12 +393,12 @@ const Home = () => {
                         <div className="card border-0 p-4 h-100 vision-card">
                             <div className="d-flex align-items-center mb-2">
                                 <img src={vision} alt="Mission" style={{ maxWidth: '60px', marginRight: '10px' }} />
-                                <h1>Vision</h1>
+                                <h1 className='fw-bold'>Vision</h1>
                             </div>
-                            <p className="fs-5 fw-medium text-dark text-justify">
+                            <p className="fs-5 fw-medium text-dark text-justify text-white">
                             To create an inclusive, technology-driven world where individuals, especially women and underserved communities, have equal access to skills and opportunities in the digital economy. We aim to bridge the digital divide, foster innovation, and promote entrepreneurship.
                             </p>
-                            <div className="text-end fs-1 text-danger opacity-50">
+                            <div className="text-end fs-1 opacity-50">
                             ❞
                             </div>
                         </div>
@@ -379,12 +407,12 @@ const Home = () => {
                         <div className="card border-0 p-4 h-100 mission-card">
                             <div className="d-flex align-items-center mb-2">
                                 <img src={target} alt="Mission" style={{ maxWidth: '60px', marginRight: '10px' }} />
-                                <h1>Mission</h1>
+                                <h1 className='fw-bold'>Mission</h1>
                             </div>
-                            <p className="fs-5 fw-medium text-dark text-justify">
+                            <p className="fs-5 fw-medium text-dark text-justify text-white">
                             To transform lives through specialized training in emerging technologies, career comeback programs, and digital empowerment initiatives. We focus on hands-on learning, mentorship, and corporate collaborations to enhance job readiness and entrepreneurship.
                             </p>
-                            <div className="text-end fs-1 text-danger opacity-50">
+                            <div className="text-end fs-1 opacity-50">
                             ❞
                             </div>
                         </div>
@@ -402,11 +430,11 @@ const Home = () => {
                         <span className="fs-3 me-3 counter-icon">{stat.icon}</span>
                         <div className="text-start">
                         {/* <p className="mb-0">{stat.text}</p> */}
-                        <h2 className="fw-bold">
+                        {/* <h2 className="fw-bold">
                             <CountUp start={0} end={stat.count} duration={5} separator="," decimals={stat.decimal ? 1 : 0} />
                             {stat.suffix}
-                        </h2>
-                        <p className="mb-0" style={{ fontWeight: 'bold' }}>{stat.text}</p>
+                        </h2> */}
+                        <p className="mb-0 counter_mobile" style={{ fontWeight: 'bold' }}>{stat.text}</p>
                         </div>
                     </div>
                     </div>
@@ -415,6 +443,66 @@ const Home = () => {
             </div>
         </div>
 
+        <section className="py-5">
+            <div className="container text-center">
+                <h2 className="fw-bold mb-4" style={{fontSize:'2.5rem'}}>Our Visionary Leaders</h2>
+                <div className="row g-4">
+                    {experts.map((expert, index) => (
+                        <div key={index} className="col-md-6">
+                            <div className="d-flex flex-column flex-md-row shadow rounded overflow-hidden h-100" 
+                                data-aos="zoom-in" 
+                                data-aos-duration="2000" 
+                                data-aos-delay="2000">
+                                
+                                {/* Image Section */}
+                                <div className="w-100 w-md-50">
+                                    <img
+                                        src={expert.img}
+                                        alt={expert.name}
+                                        className="img-fluid w-100"
+                                        style={{ objectFit: "cover", height: "100%" }}
+                                    />
+                                </div>
+
+                                {/* Info Section */}
+                                <div className="w-100 w-md-50 bg-dark text-white d-flex flex-column justify-content-start p-4 text-start h-100">
+                                    <p>{expert.description}</p>
+
+                                    {/* Push content to bottom */}
+                                    <div className="mt-auto">
+                                        {/* Experience & Qualification */}
+                                        <div className="mb-2">
+                                            <div className="d-flex align-items-center text-light">
+                                                <small><strong>Experience:</strong> {expert.experience}</small>
+                                            </div>
+                                            <div className="d-flex align-items-center text-light mt-1">
+                                                <small><strong>Qualification:</strong> {expert.qualification}</small>
+                                            </div>
+                                        </div>
+
+                                        {/* Name, Role & LinkedIn */}
+                                        <div className="name-role d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <h5 className="mb-0" style={{ color: '#F78E26' }}>{expert.name}</h5>
+                                                <small className="text-light">{expert.role}</small>
+                                            </div>
+                                            <a
+                                                href={expert.linkedin}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-primary ms-2"
+                                            >
+                                                <FaLinkedin size={30} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
 
         <footer className="main-footer">
             <div className="container">
@@ -424,7 +512,7 @@ const Home = () => {
                             <div className="logo-widget footer-widget">
                                 <figure className="logo-box"><Link className="footer_anchor" to="/"><img src={Logo} alt="Logo"/></Link></figure>
                                 <div className="text">
-                                    <p>SkillVerse Foundation is committed to empowering individuals through technology-driven education, skill development, and career-building opportunities. Our initiatives focus on reskilling, digital literacy, employability, and fostering innovation to create a sustainable impact.</p>
+                                    <p className='text-white text-justify'>SkillVerse Foundation is committed to empowering individuals through technology-driven education, skill development, and career-building opportunities. Our initiatives focus on reskilling, digital literacy, employability, and fostering innovation to create a sustainable impact.</p>
                                 </div>
                                 {/* <ul className="footer-social">
                                     <li><a className="footer_anchor" href="#"><i className="fab fa-facebook-f"></i></a></li>
@@ -438,12 +526,12 @@ const Home = () => {
                             <div className="service-widget footer-widget">
                                 <div className="footer-title">Initiatives</div>
                                 <ul className="list">
-                                    <li><a className="footer_anchor" >Women Career Comeback</a></li>
-                                    <li><a className="footer_anchor" >Tech-Driven Skilling</a></li>
-                                    <li><a className="footer_anchor" >Employability Solutions</a></li>
-                                    <li><a className="footer_anchor" >Digital Empowerment</a></li>
-                                    <li><a className="footer_anchor" >Fostering Innovation</a></li>
-                                    <li><a className="footer_anchor" >Career Kickstart</a></li>
+                                    <li><a className="footer_anchor text-white" >Women Career Comeback</a></li>
+                                    <li><a className="footer_anchor text-white" >Tech-Driven Skilling</a></li>
+                                    <li><a className="footer_anchor text-white" >Employability Solutions</a></li>
+                                    <li><a className="footer_anchor text-white" >Digital Empowerment</a></li>
+                                    <li><a className="footer_anchor text-white" >Fostering Innovation</a></li>
+                                    <li><a className="footer_anchor text-white" >Career Kickstart</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -451,9 +539,17 @@ const Home = () => {
                             <div className="contact-widget footer-widget">
                                 <div className="footer-title">Contacts</div>
                                 <div className="text">
-                                    <p>Nashik, Pune</p>
-                                    <p>+2(784) 1223323</p>
-                                    <p>info@skillverse.com</p>
+                                    <p className='text-white'>The Avenue, behind Prakash Petrol Pump, Mumbai Naka, Govind Nagar, Nashik, Maharashtra 422009</p>
+                                    {/* <p>+919890058156</p> */}
+                                    <a href="tel:+919890058156" className="me-3 text-white d-inline-flex align-items-center" style={{ textDecoration: "none" }}>
+                                        <FaPhone className="me-1 rotate-icon" style={{ color: "#fff", width: '20px', height: '20px' }} />
+                                        +91 9890058156
+                                    </a>
+                                    <a href="mailto:contact@skillversefoundation.org" className="mt-3 text-white d-inline-flex align-items-center" style={{ textDecoration: "none" }}>
+                                        <FaEnvelope className="me-1" style={{ color: "#fff", width: '20px', height: '20px' }} />
+                                        contact@skillversefoundation.org
+                                    </a>
+                                    {/* <p>contact@skillversefoundation.org</p> */}
                                 </div>
                             </div>
                         </div>

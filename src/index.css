@@ -234,12 +234,14 @@ border-left: 2px solid #d3cccc;
 .vision-card{
   box-shadow: 2px 4px 10px rgb(0 0 0 / 24%);
   border-radius: 10px;
-  background-color: #FF9;
+  background-color: #f78e26c7;
+  color: #fff;
 }
 .mission-card{
   box-shadow: 2px 4px 10px rgb(0 0 0 / 24%);
   border-radius: 10px;
-  background-color: #ff9c9c;
+  background-color: #21B0BD;
+  color: #fff;
 }
 
 
@@ -468,5 +470,11 @@ ul {
   }
   .for_mobile {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .counter_mobile{
+    font-size: 13px;
   }
 }
