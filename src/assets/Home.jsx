@@ -201,37 +201,37 @@ const Home = () => {
         <div className="container text-center py-3" id="titlesWithIcon">
             <h2 className="section-heading" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">We aim to create a better world for everyone</h2>
             <div className="row g-4 justify-content-center">
-                <div className="col-6 col-md-4 col-lg-2">
+                <div className="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                     <div className="icon-box">
                         <img src={one} alt="Women Entrepreneurship"/>
                         <p className='fw-bold'>Women Career Comeback</p>
                     </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
+                <div className="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                     <div className="icon-box">
                         <img src={two} alt="Sustainable Livelihoods"/>
                         <p className='fw-bold'>Tech-Driven Skilling</p>
                     </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
+                <div className="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                     <div className="icon-box">
                         <img src={three} alt="Tech Driven Skilling"/>
                         <p className='fw-bold'>Employability Solutions</p>
                     </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
+                <div className="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                     <div className="icon-box">
                         <img src={four}  alt="Employability Solutions"/>
                         <p className='fw-bold'>Digital Empowerment</p>
                     </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
+                <div className="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                     <div className="icon-box">
                         <img src={five}  alt="Digital Empowerment"/>
                         <p className='fw-bold'>Fostering Innovation</p>
                     </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
+                <div className="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                     <div className="icon-box">
                         <img src={six}  alt="Fostering Innovation"/>
                         <p className='fw-bold'>Career Kickstart</p>
@@ -247,8 +247,8 @@ const Home = () => {
 
                 <div className="row g-4 mt-4 impactful_row">
                     <div className="col-md-6 impactful_row_col">
-                        <h2 className="fw-bold cardsix">Our Impactful Initiatives</h2>
-                        <p>Our initiatives focus to driving social impact through skill development, digital empowerment, and entrepreneurship support. Our initiatives focus on women’s entrepreneurship, tech-driven skilling, employability solutions, digital empowerment, fostering innovation, and career comebacks. We equip individuals with business skills, digital literacy, and job-ready training to enhance their financial independence and career growth.</p>
+                        <h2 className="fw-bold cardsix" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">Our Impactful Initiatives</h2>
+                        <p className='text-justify' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">Our initiatives focus to driving social impact through skill development, digital empowerment, and entrepreneurship support. Our initiatives focus on women’s entrepreneurship, tech-driven skilling, employability solutions, digital empowerment, fostering innovation, and career comebacks. We equip individuals with business skills, digital literacy, and job-ready training to enhance their financial independence and career growth.</p>
 
                         <div className="step-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                             <span className="step-number step-number2">02</span>
@@ -453,7 +453,7 @@ const Home = () => {
                                 <div className="text">
                                     <p>Nashik, Pune</p>
                                     <p>+2(784) 1223323</p>
-                                    <p>info@example.com</p>
+                                    <p>info@skillverse.com</p>
                                 </div>
                             </div>
                         </div>

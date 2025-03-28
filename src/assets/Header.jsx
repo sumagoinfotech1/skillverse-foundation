@@ -57,9 +57,9 @@ const Header = () => {
                   +91 9800000000
                 </a>
 
-                <a href="mailto:abcd@gmail.com" className="text-white d-inline-flex align-items-center" style={{ textDecoration: "none" }}>
+                <a href="mailto:info@skillverse.com" className="text-white d-inline-flex align-items-center" style={{ textDecoration: "none" }}>
                   <FaEnvelope className="me-1" style={{ color: "#fff", width: '20px', height: '20px' }} />
-                  abcd@gmail.com
+                  info@skillverse.com
                 </a>
               </div>
 
