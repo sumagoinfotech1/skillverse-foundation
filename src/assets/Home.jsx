@@ -74,8 +74,8 @@ const Home = () => {
     const stats = [
         { icon: <img src={calendar} alt="Calendar Icon" style={{maxWidth:'60px'}} />, text: "Upskilling Individuals", count: 2014, suffix: "+", bold: true },
         { icon: <img src={location} alt="location" style={{maxWidth:'60px'}} />, text: "Transforming Careers", count: 190, suffix: "+", bold: true },
-        { icon: <img src={users} alt="users" style={{maxWidth:'60px'}} />, text: "Incubating Startup", count: 2.5, suffix: "+", bold: true, decimal: true },
-        { icon: <img src={files} alt="files" style={{maxWidth:'60px'}} />, text: "Empowering Student", count: 200, suffix: "+", bold: true },
+        { icon: <img src={users} alt="users" style={{maxWidth:'60px'}} />, text: "Incubating startups", count: 2.5, suffix: "+", bold: true, decimal: true },
+        { icon: <img src={files} alt="files" style={{maxWidth:'60px'}} />, text: "Empowering students", count: 200, suffix: "+", bold: true },
       ];
 
     const [isMobile, setIsMobile] = useState(false);
@@ -172,7 +172,7 @@ const Home = () => {
                     <h2 className="fw-bold">SkillVerse Foundation</h2>
                     <p className="about-text text-justify">At SkillVerse Foundation, we are committed to transforming lives through technology-driven education and skill development. Our mission is to bridge the gap between education and industry requirements by equipping individuals with future-ready skills that enhance employability, foster innovation, and drive digital empowerment.</p>
                     <p className="about-text text-justify">We believe that technology has the power to create equal opportunities for all, regardless of background or circumstances. Through our initiatives, we provide training in emerging fields such as Artificial Intelligence, Data Science, Data Analytics , and Web Development while also focusing on digital literacy and professional development.</p>
-                    <p className="about-text text-justify">Our programs cater to diverse groups, including women returning to the workforce, young professionals, students, and underserved communities, ensuring they gain the knowledge, confidence, and industry exposure needed to succeed in the modern digital economy.</p>
+                    <p className="about-text text-justify">Our programs cater to diverse groups, including women returning to the workforce, young professionals, and students who are eager, ensuring they gain the knowledge, confidence, and industry exposure needed to succeed in the modern digital economy.</p>
                     <p className="about-text text-justify">At SkillVerse Foundation, we collaborate with industry leaders, educational institutions, and corporate partners to create a sustainable impact. Whether it’s through hands-on internships, mentorship programs, or startup incubation, we empower individuals to thrive in the tech-driven world and unlock new career opportunities.</p>
                     {/* <a href="#" className="btn btn-custom">Learn more</a> */}
                 </div>
@@ -276,7 +276,7 @@ const Home = () => {
                 <div className="row g-4 mt-4 impactful_row">
                     <div className="col-md-6 impactful_row_col">
                         <h2 className="fw-bold cardsix" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">Our Impactful Initiatives</h2>
-                        <p className='text-justify' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">Our initiatives focus to driving social impact through skill development, digital empowerment, and entrepreneurship support. Our initiatives focus on women’s entrepreneurship, tech-driven skilling, employability solutions, digital empowerment, fostering innovation, and career comebacks. We equip individuals with business skills, digital literacy, and job-ready training to enhance their financial independence and career growth.</p>
+                        <p className='text-justify' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">Our initiatives are dedicated to driving social impact through skill development, digital empowerment, and entrepreneurship support. We emphasize women's career comebacks, tech-driven skilling, employability solutions, digital empowerment, fostering innovation, and career growth. By equipping individuals with business skills, digital literacy, and job-ready training, we empower them to achieve financial independence and professional success.</p>
 
                         <div className="step-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                             <span className="step-number step-number2">02</span>
@@ -329,7 +329,7 @@ const Home = () => {
                 <div className="row g-4 mt-4 impactful_row">
                     <div className="col-md-6 impactful_row_col">
                         <h2 className="fw-bold cardsix">Our Impactful Initiatives</h2>
-                        <p>Our initiatives focus to driving social impact through skill development, digital empowerment, and entrepreneurship support. Our initiatives focus on women’s entrepreneurship, tech-driven skilling, employability solutions, digital empowerment, fostering innovation, and career comebacks. We equip individuals with business skills, digital literacy, and job-ready training to enhance their financial independence and career growth.</p>
+                        <p>Our initiatives are dedicated to driving social impact through skill development, digital empowerment, and entrepreneurship support. We emphasize women's career comebacks, tech-driven skilling, employability solutions, digital empowerment, fostering innovation, and career growth. By equipping individuals with business skills, digital literacy, and job-ready training, we empower them to achieve financial independence and professional success.</p>
 
                         <div className="step-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
                             <span className="step-number step-number1">01</span>
@@ -396,7 +396,7 @@ const Home = () => {
                                 <h1 className='fw-bold'>Vision</h1>
                             </div>
                             <p className="fs-5 fw-medium text-dark text-justify text-white">
-                            To create an inclusive, technology-driven world where individuals, especially women and underserved communities, have equal access to skills and opportunities in the digital economy. We aim to bridge the digital divide, foster innovation, and promote entrepreneurship.
+                            To create an inclusive, technology-driven world where individuals, especially women and students who are eager, have equal access to skills and opportunities in the digital economy. We aim to bridge the digital divide, foster innovation, and promote entrepreneurship.
                             </p>
                             <div className="text-end fs-1 opacity-50">
                             ❞
