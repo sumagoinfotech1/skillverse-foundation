@@ -524,7 +524,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 col-md-3 col-sm-6 footer-column footer-before-address d-flex justify-content-center">
                             <div className="service-widget footer-widget">
-                                <div className="footer-title">Initiatives</div>
+                                <div className="footer-title" style={{color:'#ff5e14'}}>Initiatives</div>
                                 <ul className="list">
                                     <li><a className="footer_anchor text-white" >Women Career Comeback</a></li>
                                     <li><a className="footer_anchor text-white" >Tech-Driven Skilling</a></li>
@@ -537,11 +537,11 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 col-md-3 col-sm-6 footer-widget footer-address">
                             <div className="contact-widget footer-widget">
-                                <div className="footer-title">Contacts</div>
+                                <div className="footer-title" style={{color:'#ff5e14'}}>Contacts</div>
                                 <div className="text">
                                     <p className='text-white'>The Avenue, behind Prakash Petrol Pump, Mumbai Naka, Govind Nagar, Nashik, Maharashtra 422009</p>
                                     {/* <p>+919890058156</p> */}
-                                    <a href="tel:+919890058156" className="me-3 text-white d-inline-flex align-items-center" style={{ textDecoration: "none" }}>
+                                    <a href="tel:+919890058156" className="me-3 text-white d-inline-flex align-items-center mt-2 mt-md-0" style={{ textDecoration: "none" }}>
                                         <FaPhone className="me-1 rotate-icon" style={{ color: "#fff", width: '20px', height: '20px' }} />
                                         +91 9890058156
                                     </a>
@@ -564,7 +564,7 @@ const Home = () => {
                     <div className="col-lg-12 col-md-12 col-sm-12 column d-flex justify-content-center">
                         <div className="copyright">
                             © {new Date().getFullYear()} Copyright: 
-                            <a className="footer_anchor" href="#"> Designed and Developed by Skillverse Foundation</a>
+                            <a className="footer_anchor" style={{color:'#ff5e14'}}> Designed and Developed by Skillverse Foundation</a>
                         </div>
                     </div>
                 </div>
