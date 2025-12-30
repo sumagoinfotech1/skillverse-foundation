@@ -41,16 +41,16 @@ import "aos/dist/aos.css";
 const Home = () => {
 
     const experts = [
-        {
-          name: "Sudhir Gorade",
-          role: "Director",
-          linkedin: "https://www.linkedin.com/in/sudhir-gorade-18b83526/",
-          experience: "15+ years",
-          qualification: "BE IT | MTech Computer",
-          description:
-            "A strategic innovator advancing skill development and employability in emerging technologies through industry collaboration.",
-          img: team1,
-        },
+        // {
+        //   name: "Sudhir Gorade",
+        //   role: "Director",
+        //   linkedin: "https://www.linkedin.com/in/sudhir-gorade-18b83526/",
+        //   experience: "15+ years",
+        //   qualification: "BE IT | MTech Computer",
+        //   description:
+        //     "A strategic innovator advancing skill development and employability in emerging technologies through industry collaboration.",
+        //   img: team1,
+        // },
         {
           name: "Sonali Adhav-Gorade",
           role: "Director",
@@ -445,8 +445,8 @@ const Home = () => {
 
         <section className="py-5">
             <div className="container text-center">
-                <h2 className="fw-bold mb-4" style={{fontSize:'2.5rem'}}>Our Visionary Leaders</h2>
-                <div className="row g-4">
+                <h2 className="fw-bold mb-4" style={{fontSize:'2.5rem'}}>Our Visionary Leader</h2>
+                <div className="row g-4 justify-content-center">
                     {experts.map((expert, index) => (
                         <div key={index} className="col-md-6">
                             <div className="d-flex flex-column flex-md-row shadow rounded overflow-hidden h-100" 
